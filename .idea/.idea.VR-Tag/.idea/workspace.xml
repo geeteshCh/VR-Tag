@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f03cc541-bace-42ff-aa15-4381584309fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/OVRIntegration/Runtime/Prefabs/OVRInteraction.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/OVRIntegration/Runtime/Prefabs/OVRInteraction.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Materials/SkeletalDebugMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Materials/SkeletalDebugMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Meshes/Locomotion/Materials/MetaCrossMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Meshes/Locomotion/Materials/MetaCrossMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Meshes/Locomotion/Materials/MetaSecondaryGradientMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Runtime/Meshes/Locomotion/Materials/MetaSecondaryGradientMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Materials/MoonMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Materials/MoonMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Materials/PlanetMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Materials/PlanetMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Locomotion/Models/Materials/LocomotionMirrorMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Locomotion/Models/Materials/LocomotionMirrorMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Locomotion/Models/Materials/LocomotionWaterMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Locomotion/Models/Materials/LocomotionWaterMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Room/Models/skybaker.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Room/Models/skybaker.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Screen/Materials/FrameMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Screen/Materials/FrameMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Screen/Materials/ScreenMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Environment/Screen/Materials/ScreenMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Materials/PodiumMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigRedButton/Materials/PodiumMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigStone/Materials/BigStoneMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/BigStone/Materials/BigStoneMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Box/Materials/BoxMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Box/Materials/BoxMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/Materials/ChessPieceMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/ChessPiece/Materials/ChessPieceMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/CoffeeCup/CoffeeCupMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/CoffeeCup/CoffeeCupMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Doll/Materials/DollMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Doll/Materials/DollMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Key/Materials/keyMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Key/Materials/keyMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Locomotion/Materials/MetaLocoTutorialUIMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Locomotion/Materials/MetaLocoTutorialUIMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapFrameMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapFrameMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapPointerMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/MapWithPins/Materials/MapPointerMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Materials/CubeMaterialBlue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Materials/CubeMaterialBlue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Materials/CubeMaterialGreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Materials/CubeMaterialGreen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Materials/mugMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Mug/Materials/mugMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Materials/SprayBottleMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/SprayBottle/Materials/SprayBottleMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/StonePolyhedra/Materials/StonePolyhedraMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/StonePolyhedra/Materials/StonePolyhedraMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/TennisBall/TennisBallMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/TennisBall/TennisBallMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Torch/Materials/torchMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/Torch/Materials/torchMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/ToyBox/ToyBoxesMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Interaction/Samples/Objects/Props/ToyBox/ToyBoxesMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/eyelashes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/eyelashes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/hair.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/hair.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/melinda_DIFF.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/melinda_DIFF.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/outerEyeShell.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/outerEyeShell.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/shirt.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/shirt.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/skin_DIFF.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/FemaleHead_Morph/Materials/skin_DIFF.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/Materials/Head-2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/Materials/Head-2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/Materials/sil.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/LipSync/Models/RobotHead_TextureFlip/Materials/sil.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/OculusProjectConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Materials/Hands_solid.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/CustomHands/Models/HandMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/Materials/MeterGrid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/Materials/MeterGrid.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/Materials/lambert1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/Locomotion/Materials/lambert1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_DIF.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_DIF.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_gloss_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/L_controller_gloss_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_DIF.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_DIF.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_gloss_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/R_controller_gloss_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/lambert1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/lambert1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/touchController_basecolor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Materials/touchController_basecolor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Models/touch_controller_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Core/TouchControllers/Models/touch_controller_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/GroundMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/GroundMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/MAT_watergun_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/MAT_watergun_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/MAT_watergun_black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/DistanceGrab/Materials/MAT_watergun_black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/GroundMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/GroundMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_brick_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_brick_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_cinderblock_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_cinderblock_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_concrete_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_concrete_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_tile_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_tile_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_wood_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_wood_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_wood_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_floor_wood_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_dark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_dark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_light.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_grid_01_light.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_metal_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MAT_metal_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MeterGrid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Locomotion/Materials/MeterGrid.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Graffiti.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Graffiti.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/LogoWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/LogoWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/OculusGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/OculusGlow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SignGlow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/Passthrough/Materials/SignGlow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Ball Visible.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Ball Visible.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Ceiling.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Ceiling.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/DiffusedWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/DiffusedWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Fabric.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Fabric.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Floor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Floor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Plastic.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Plastic.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/Wood.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/WoodDark.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SceneManager/Materials/WoodDark.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/Ball03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/Ball03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/Ball10.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/Ball10.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/GroundMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/GroundMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/MAT_room_atlas_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/MAT_room_atlas_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/MAT_room_atlas_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/MAT_room_atlas_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SoccerBlack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SoccerBlack.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SoccerWhite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SoccerWhite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SportsBottle_lid.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SportsBottle_lid.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SportsBottle_metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/SportsBottle_metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/ToyBallMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/ToyBallMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/WoodBlock.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SharedAssets/Materials/WoodBlock.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Blue.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Blue.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Clear.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Clear.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/IconAnchor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/IconAnchor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/IconBackground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/IconBackground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/UIPanelMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/SpatialAnchor/Materials/UIPanelMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/TouchPro/Materials/GroundMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/TouchPro/Materials/GroundMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/TouchPro/Materials/TableMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/SampleFramework/Usage/TouchPro/Materials/TableMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/Standard Assets/Character Controllers/Sources/PrototypeCharacter/Materials/constructor_done.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/Standard Assets/Character Controllers/Sources/PrototypeCharacter/Materials/constructor_done.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/AmbisonicObject1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/AmbisonicObject1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/Ground.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/Ground.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/SpatializedObject1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/SpatializedObject1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/SpatializedObject2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Spatializer/scenes/materials/SpatializedObject2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/BasicHandMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/BasicHandMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/CubeMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/CubeMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/PlainMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Materials/PlainMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_left.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPlus/Materials/MetaQuestTouchPlusMATphong_right.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProLeft_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/MetaQuestProRight_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/batteryIndicator_mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/MetaQuestTouchPro/Materials/batteryIndicator_mat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForQuest2/Materials/OculusTouchForQuest2_MAT.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForQuestAndRiftS/Materials/OculusTouchForQuestAndRiftS_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/VR/Meshes/OculusTouchForRift/Materials/OculusTouchForRift_Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Features/Dictation/Scripts/Runtime/Utilities.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Lib/Wit.ai/Lib/Conduit/Editor/Data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Lib/Wit.ai/Scripts/Runtime/Data/Traits.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Chess/Materials/CheckerBoard.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Chess/Materials/CheckerBoard.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Chess/Materials/CheckerPiece.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Chess/Materials/CheckerPiece.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LightTraits/Materials/LightOff.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LightTraits/Materials/LightOff.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LightTraits/Materials/LightOn.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LightTraits/Materials/LightOn.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LiveUnderstanding/Materials/Shapes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/LiveUnderstanding/Materials/Shapes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Shapes/Materials/Shapes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/Shapes/Materials/Shapes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/ShapesConduit/Materials/Shapes.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Oculus/Voice/Samples/ShapesConduit/Materials/Shapes.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CastleGuard.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/CastleGuard.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tag_ProtoEnv.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tag_ProtoEnv.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/OculusRuntimeSettings.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettingsPerBuildTarget.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMechanics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2cf49V7HAbJ0b8uELseKdEvpJtu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\dhruv.000\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\dhruv.000\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\dhruv.000\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Builds/VR Tag.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Unity_Projects\VIZA  VR\VR-Tag\Builds" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Unity_Projects\VIZA  VR\VR-Tag&quot; -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Unity_Projects\VIZA  VR\VR-Tag" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.16f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;D:\Unity_Projects\VIZA  VR\VR-Tag&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="D:\Unity_Projects\VIZA  VR\VR-Tag" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f03cc541-bace-42ff-aa15-4381584309fa" name="Changes" comment="" />
+      <created>1708489147445</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708489147445</updated>
+      <workItem from="1708489148622" duration="1806000" />
+      <workItem from="1709186332475" duration="7939000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
