@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
         int chaserIndex = Random.Range(0, nrc.playerNetworkObjects.Count);
         print("chaser index " +chaserIndex);
         // Use an RPC to assign the chaser role based on the random index
-        nrc.gameObject.GetComponent<PlayerRoleController>().HandleCatch(nrc.playerNetworkObjects[chaserIndex].Id);
+        nrc.gameObject.GetComponent<PlayerController>().HandleCatch(nrc.playerNetworkObjects[chaserIndex].Id);
         NetworkManager.Instance.SessionRunner.Despawn(canvasToDespawn);
         print("chaser index " +chaserIndex);
     }

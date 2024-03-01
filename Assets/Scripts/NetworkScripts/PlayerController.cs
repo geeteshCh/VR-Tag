@@ -1,7 +1,7 @@
 using Fusion;
 using UnityEngine;
 
-public class PlayerRoleController : NetworkBehaviour {
+public class PlayerController : NetworkBehaviour {
     [Networked, OnChangedRender(nameof(UpdatePlayerAppearance))] public NetworkBool isChaser { get; set; }
 
     public Material chaserMaterial;
@@ -22,7 +22,7 @@ public class PlayerRoleController : NetworkBehaviour {
         // This RPC is called by the chaser to change the role of the caught player
         NetworkObject.NetworkUnwrap(NetworkManager.Instance.SessionRunner, caughtPlayerId, ref caughtPlayerObj);
         if (caughtPlayerObj) {
-            var caughtPlayerController = caughtPlayerObj.GetComponent<PlayerRoleController>();
+            var caughtPlayerController = caughtPlayerObj.GetComponent<PlayerController>();
             if (caughtPlayerController != null) {
                 // The previous chaser becomes a runner
                 this.isChaser = false;

@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class OnCatchTrigger : MonoBehaviour
 {
-    public PlayerRoleController playerRoleController;
+    public PlayerController playerRoleController;
     public LayerMask layerToTrigger;
 
     private void OnEnable()
@@ -25,7 +25,7 @@ public class OnCatchTrigger : MonoBehaviour
                print(n.gameObject.GetComponent<NetworkRigCustom>().userName + " Got Caught ");
                
                if(playerRoleController == null)
-                   playerRoleController = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerRoleController>();
+                   playerRoleController = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
                playerRoleController.HandleCatch(n.Id);
             }
         }
