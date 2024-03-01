@@ -14,7 +14,6 @@ public class FirstPersonController : MonoBehaviour
     Rigidbody rigidbody;
     void Awake()
     {
-        
         rigidbody = GetComponent<Rigidbody> ();
     }
 
@@ -23,6 +22,14 @@ public class FirstPersonController : MonoBehaviour
     {
         transform.Rotate(Vector3.up * OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).x);
         input = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
+
+        /*if (Application.isEditor)
+        {
+            if(Input.GetMouseButton(1))
+                transform.Rotate(Vector3.up * Input.GetAxis("Mouse X"));
+            input = new Vector2( Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        }*/
+        
         Vector3 moveDir = new Vector3(input.x, 0, input.y).normalized;
         // Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
 

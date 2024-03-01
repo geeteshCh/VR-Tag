@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
 using Fusion;
+using TMPro;
 using Unity.VisualScripting;
+using Random = UnityEngine.Random;
 
 public class NetworkRigCustom : NetworkBehaviour
 {
@@ -12,8 +14,9 @@ public class NetworkRigCustom : NetworkBehaviour
 
     [Header("RigVisuals")]
     [SerializeField]
-    private GameObject _headVisuals;
+    private GameObject[] _localVisuals;
 
+    [SerializeField] private TextMeshProUGUI playerNameText;
     #region RigComponents
     [Header("RigComponents")]
     [SerializeField]
@@ -22,23 +25,38 @@ public class NetworkRigCustom : NetworkBehaviour
     [SerializeField]
     private NetworkTransform _headTransform;
 
-  
-
     [SerializeField]
     private NetworkTransform _leftHandTransform;
     [SerializeField]
     private NetworkTransform _rightHandTransform;
     
-   
+    [SerializeField]
+    private NetworkTransform _rightOculusHandTransform;
+    [SerializeField]
+    private NetworkTransform _leftOculusHandTransform;
+    
     #endregion
 
     LocalXRRigCustom _localXRRig;
- 
-    private void OnEnable()
-    {
+    
         
+    [SerializeField] private NetworkTransform[] lfingers;
+    [SerializeField] private NetworkTransform[] rfingers;
+
+    [Networked, OnChangedRender(nameof(OnUserNameChanged)),Capacity(20)]
+    public NetworkString<_32> userName { get; set; }
+    public List<NetworkObject> playerNetworkObjects { get; } = new();
+
+    void OnEnable()
+    {
+        rfingers = _rightOculusHandTransform.gameObject.GetComponentsInChildren<NetworkTransform>();
+        lfingers = _leftOculusHandTransform.gameObject.GetComponentsInChildren<NetworkTransform>();
     }
 
+    void OnUserNameChanged()
+    {
+        playerNameText.text = userName.ToString();
+    }
     public override void Spawned()
     {
         if (IsLocalNetworkRig)
@@ -48,16 +66,22 @@ public class NetworkRigCustom : NetworkBehaviour
             {
                 Debug.LogError("Missing Hardware Rig in the Scene");
             }
-            _headVisuals.SetActive(false);
+
+            foreach (var v in _localVisuals)
+            {
+                v.SetActive(false);
+            }
             Debug.Log("Rotation ::: " + transform.rotation.eulerAngles);
             Quaternion targetRotation = Quaternion.LookRotation(Vector3.zero - transform.position);
             transform.rotation = targetRotation;
-            _localXRRig.transform.SetPositionAndRotation(transform.position,targetRotation);
-
+            //_localXRRig.transform.SetPositionAndRotation(transform.position,targetRotation);
+            userName = PlayerPrefs.GetString("username");
+            playerNetworkObjects.Add(Object);
         }
         else
         {
             Debug.Log("This is a client object");
+            OnUserNameChanged();
         }
         
 
@@ -66,6 +90,7 @@ public class NetworkRigCustom : NetworkBehaviour
             print("Namesss Added "+ NetworkManager.Instance.SessionRunner.SessionInfo.PlayerCount.ToString());
             //GetComponent<ColorSync>().SetRandomColor();
         }
+        playerNetworkObjects.Add(Object);
        
     }
 
@@ -93,6 +118,17 @@ public class NetworkRigCustom : NetworkBehaviour
             _leftHandTransform.transform.SetPositionAndRotation(inputData.LeftHandPosition, inputData.LeftHandRotation);
             _rightHandTransform.transform.SetPositionAndRotation(inputData.RightHandPosition, inputData.RightHandRotation);
         }
+        
+        if (IsLocalNetworkRig)
+        {
+            int i = 0;
+            foreach (var nt in rfingers)
+            {
+                nt.transform.SetPositionAndRotation(_localXRRig.rfingers[i].position, _localXRRig.rfingers[i].rotation);
+                lfingers[i].transform.SetPositionAndRotation(_localXRRig.lfingers[i].position, _localXRRig.lfingers[i].rotation);
+                i++;
+            }
+        }
     }
     public override void Render()
     {
@@ -109,4 +145,5 @@ public class NetworkRigCustom : NetworkBehaviour
 
         }
     }
+    
 }

@@ -6,15 +6,27 @@ using UnityEngine;
 
 public class OnCatchTrigger : MonoBehaviour
 {
-
+    public PlayerRoleController playerRoleController;
     public LayerMask layerToTrigger;
+
+    private void OnEnable()
+    {
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == layerToTrigger)
-        {
-            if (other.transform.root.GetComponent<NetworkObject>()?.HasStateAuthority == false)
+        Debug.Log("Trigger Enter Outside " +other.gameObject.layer + "  "+layerToTrigger  );
+        if (other.gameObject.layer == 7)
+        {   
+            Debug.Log("Trigger Enter Inside");
+            NetworkObject n = other.transform.root.GetComponent<NetworkObject>();
+            if (n?.HasStateAuthority == false)
             {
+               print(n.gameObject.GetComponent<NetworkRigCustom>().userName + " Got Caught ");
                
+               if(playerRoleController == null)
+                   playerRoleController = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerRoleController>();
+               playerRoleController.HandleCatch(n.Id);
             }
         }
     }

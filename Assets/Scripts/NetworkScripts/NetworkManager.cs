@@ -23,12 +23,18 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     public List<SessionInfo> _sessions = new List<SessionInfo>();
     public Transform _sessionsListContent;
     public GameObject sessionEntryPrefab;
-  
+
+
+   
 
     private void Awake()
     {
         if (Instance != null)
         {
+            /*this.SessionRunner = Instance.SessionRunner;
+            Destroy(Instance);
+            Instance = this;*/
+            
             Destroy(this);
         }
         else
@@ -41,14 +47,21 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
 
     void Start()
     {
-        
-        CreateRunner();
-        SessionRunner.JoinSessionLobby(SessionLobby.Shared);
+        if (SessionRunner == null)
+        {
+            CreateRunner();
+            SessionRunner.JoinSessionLobby(SessionLobby.Shared); 
+        }
         //StartSharedSession();
     }
 
     void Update()
     {
+    }
+    
+    void PlayerAdded()
+    {
+        print("Player Added in the List");
     }
     
     public async void StartSharedSession(string SessionName="dummy")
@@ -99,7 +112,14 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         }
     }
     
-    private async Task Connect(string SessionName, int playerCount = 10)
+    public void RegisterNetworkObjects()
+    {
+        NetworkObject[] networkObjectArray =  FindObjectsByType<NetworkObject>(FindObjectsSortMode.None);
+        SceneRef sceneRef = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex);
+        SessionRunner.RegisterSceneObjects(sceneRef, networkObjectArray);
+    }
+
+    private async Task Connect(string SessionName , int playerCount = 10)
     {
         
         var result = await SessionRunner.StartGame(new StartGameArgs()
@@ -129,11 +149,13 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
         Debug.Log("Player Joined :: " + player.PlayerId);
+         
     }
     
     public void OnPlayerLeft(NetworkRunner runner, PlayerRef player)
     {
         Debug.Log("Player Left :: " + player.PlayerId);
+        
     }
     
     public void OnShutdown(NetworkRunner runner, ShutdownReason shutdownReason)

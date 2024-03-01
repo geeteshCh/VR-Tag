@@ -8,20 +8,18 @@ public class MenuUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI userName;
     [SerializeField] private TextMeshProUGUI roomName;
- 
-    void Start()
+    
+    
+    public void OnUserNameEntered(string val)
     {
-        
+        PlayerPrefs.SetString("username", val);
     }
-
-    void Update()
-    {
-        
-    }
-
-
     public void OnRoomJoinOrCreate()
     {
+        if (roomName.text == "")
+        {
+            roomName.text = "dummy";
+        }
         NetworkManager.Instance.StartSharedSession(roomName.text);
     }
 

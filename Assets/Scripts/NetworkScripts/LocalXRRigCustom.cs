@@ -18,6 +18,9 @@ public class LocalXRRigCustom : MonoBehaviour,INetworkRunnerCallbacks
     
     public Transform _rightHandTransform;
 
+    [SerializeField] public Transform[] lfingers;
+    [SerializeField] public Transform[] rfingers;
+    
     #endregion
 
     // Start is called before the first frame update

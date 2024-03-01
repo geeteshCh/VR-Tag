@@ -12,20 +12,14 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     [SerializeField] private NetworkPrefabRef playerPrefab;
     [SerializeField] private float planetRadius;
     [SerializeField] private float minTheta, maxTheta, minPhi, maxPhi;
-    private void Awake()
-    {
-        NetworkManager.Instance.SessionRunner.AddCallbacks(this);
-    }
+
+    public NetworkObject localPlayer;
 
     void Start()
     {
+        NetworkManager.Instance.SessionRunner.AddCallbacks(this);
         SpawnPlayer(NetworkManager.Instance.SessionRunner);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        NetworkManager.Instance.RegisterNetworkObjects();
     }
 
     Vector3 GenerateRandomPositionInSector(float radius)
@@ -46,7 +40,8 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
         //Vector3 spawnPosition = GenerateRandomPositionInSector(planetRadius);
         // Assuming you have a NetworkObject component attached to your player prefab
         Vector3 spawnPosition = Vector3.up;
-        runner.Spawn(playerPrefab, spawnPosition, Quaternion.identity);
+        localPlayer = runner.Spawn(playerPrefab, spawnPosition, Quaternion.identity);
+        print(localPlayer.Id + " LOCAL PLAYER");
     }
     
     
