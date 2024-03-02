@@ -8,8 +8,27 @@ public class PlayerController : NetworkBehaviour {
     public Material runnerMaterial;
     public Renderer playerRenderer;
     
-    private NetworkObject caughtPlayerObj;
+    private NetworkObject currentChaser;
+    private NetworkObject newChaser;
     
+    private int lifeCount = 3;
+
+
+    public bool GotCaughtAndDied()
+    {
+        Debug.Log("Got Caught Called to Remove One Life");
+        lifeCount -= 1;
+
+        if (lifeCount < 0)
+        {
+            string playerName = GetComponent<NetworkRigCustom>().FetchPlayerName();
+            Debug.Log(" Player :: " + playerName + " Out of the Game Now");
+            RPC_RequestToDespawn(GetComponent<NetworkObject>());
+            return true;
+        }
+
+        return false;
+    }
     
     // Method to change player appearance based on their role
     public void UpdatePlayerAppearance() {
@@ -20,15 +39,23 @@ public class PlayerController : NetworkBehaviour {
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void RPC_RequestRoleChange(NetworkId caughtPlayerId) {
         // This RPC is called by the chaser to change the role of the caught player
-        NetworkObject.NetworkUnwrap(NetworkManager.Instance.SessionRunner, caughtPlayerId, ref caughtPlayerObj);
-        if (caughtPlayerObj) {
-            var caughtPlayerController = caughtPlayerObj.GetComponent<PlayerController>();
+        NetworkObject.NetworkUnwrap(NetworkManager.Instance.SessionRunner, caughtPlayerId, ref newChaser);
+        if (newChaser) {
+            var caughtPlayerController = newChaser.GetComponent<PlayerController>();
             if (caughtPlayerController != null) {
-                // The previous chaser becomes a runner
-                this.isChaser = false;
-                // The caught player becomes the chaser
-                caughtPlayerController.isChaser = true;
+                bool died = caughtPlayerController.GotCaughtAndDied();
                 
+                if (died)
+                {
+                    return;
+                }
+                else
+                {
+                    // The previous chaser becomes a runner
+                    this.isChaser = false;
+                    // The caught player becomes the chaser
+                    caughtPlayerController.isChaser = true;
+                }   
             }
         }
     }

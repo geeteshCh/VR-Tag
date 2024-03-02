@@ -57,6 +57,12 @@ public class NetworkRigCustom : NetworkBehaviour
     {
         playerNameText.text = userName.ToString();
     }
+
+    public string FetchPlayerName()
+    {
+        return playerNameText.text;
+    }
+    
     public override void Spawned()
     {
         if (IsLocalNetworkRig)

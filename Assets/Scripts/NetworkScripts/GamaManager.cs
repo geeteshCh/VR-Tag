@@ -22,16 +22,15 @@ public class GameManager : MonoBehaviour {
         if(nrc == null)
             nrc = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<NetworkRigCustom>();
 
-        if (!nrc.HasStateAuthority)
-            return;
-        
         print("Assigning Chaser "+ nrc.playerNetworkObjects.Count);
         // Generate a random index on the server/master client
         int chaserIndex = Random.Range(0, nrc.playerNetworkObjects.Count);
         print("chaser index " +chaserIndex);
         // Use an RPC to assign the chaser role based on the random index
-        nrc.gameObject.GetComponent<PlayerController>().HandleCatch(nrc.playerNetworkObjects[chaserIndex].Id);
-        NetworkManager.Instance.SessionRunner.Despawn(canvasToDespawn);
+        PlayerController pc = nrc.gameObject.GetComponent<PlayerController>();
+        pc.HandleCatch(nrc.playerNetworkObjects[chaserIndex].Id);
+        if(canvasToDespawn)
+            pc.RPC_RequestToDespawn(canvasToDespawn);
         print("chaser index " +chaserIndex);
     }
 
