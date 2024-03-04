@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
 
     private void Update()
     {
-        if ((OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.X)))
+        if ((OVRInput.GetDown(OVRInput.Button.Three) || Input.GetKeyDown(KeyCode.X)))
         {
             AssignChaserRandomly();
         }

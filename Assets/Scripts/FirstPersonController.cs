@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class FirstPersonController : MonoBehaviour
 {
-    // Start is called before the first frame update
+       // Start is called before the first frame update
     public float walkSpeed = 3f;
     private Vector3 moveAmount;
     private Vector3 smoothMovevelocity;
     private Vector2 input;
     public Transform OVRRigTransform;
     Rigidbody rigidbody;
+    
+  
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody> ();
@@ -22,14 +24,6 @@ public class FirstPersonController : MonoBehaviour
     {
         transform.Rotate(Vector3.up * OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).x);
         input = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-
-        /*if (Application.isEditor)
-        {
-            if(Input.GetMouseButton(1))
-                transform.Rotate(Vector3.up * Input.GetAxis("Mouse X"));
-            input = new Vector2( Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        }*/
-        
         Vector3 moveDir = new Vector3(input.x, 0, input.y).normalized;
         // Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
 
@@ -55,4 +49,5 @@ public class FirstPersonController : MonoBehaviour
         yield return new WaitForSeconds(duration); // Wait for the duration of the turbo speed
         walkSpeed = walkSpeed/multiplier; // Reset the speed back to normal
     }
+    
 }

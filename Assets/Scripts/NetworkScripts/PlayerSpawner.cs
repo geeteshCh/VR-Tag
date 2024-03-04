@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Fusion;
 using Fusion.Sockets;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -16,6 +17,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     public NetworkObject localPlayer;
     
     public GameObject diedScreen;
+    public GameObject logCanvas;
     void Start()
     {
         NetworkManager.Instance.SessionRunner.AddCallbacks(this);

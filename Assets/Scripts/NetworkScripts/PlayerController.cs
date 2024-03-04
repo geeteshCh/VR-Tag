@@ -1,5 +1,8 @@
 using System;
+using System.Collections;
 using Fusion;
+using TMPro;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,16 +18,30 @@ public class PlayerController : NetworkBehaviour {
     
     [Networked]
     public int lifeCount { get; set; }
-
+    
     public NetworkObject noToDestroy;
     public float lastTime = -1;
     private LocalXRRigCustom lrc;
-
+    
+    
+    [Header("For Stopwatch")]
+    public float timeLimit = 120f; // Countdown time limit in seconds
+    
+    [Networked]
+    private float timeRemaining{ get; set; } // Time remaining in the countdown
+    private bool isStopwatchRunning = false;
+    
+    
+    private PlayerSpawner ps;
+    
     private void Start()
     {
         lifeCount = 3;
-    }
+        timeRemaining = timeLimit;
+        ps = FindObjectOfType<PlayerSpawner>();
 
+    }
+    
     public bool GotCaughtAndDied()
     {
         if (Time.time - lastTime < 1)
@@ -38,14 +55,52 @@ public class PlayerController : NetworkBehaviour {
         if (lifeCount < 0)
         {
             string playerName = GetComponent<NetworkRigCustom>().FetchPlayerName();
-            Debug.Log(" Player :: " + playerName + " Out of the Game Now");
+            string msgLog = " Player :: " + playerName + " Out of the Game Now";
+            Debug.Log(msgLog);
+            RPC_RequestToShowMessage(msgLog);
             RPC_RequestToDespawnNO(GetComponent<NetworkObject>());
-            FindObjectOfType<PlayerSpawner>().diedScreen.SetActive(true);
+            ps.diedScreen.SetActive(true);
             return true;
         }
 
         return false;
     }
+    
+    
+    void FixedUpdate()
+    {
+        if (isStopwatchRunning && timeRemaining > 0)
+        {
+            // Subtract the fixed delta time from remaining time
+            timeRemaining -= Time.fixedDeltaTime;
+            Debug.Log($"Time Remaining: {timeRemaining} seconds");
+
+            if (timeRemaining <= 0)
+            {
+                // Optionally, perform an action when the countdown reaches zero
+                Debug.Log("Countdown finished!");
+                StopCountdown();
+                if (!GotCaughtAndDied())
+                {
+                    StartCountdown();
+                }
+            }
+        }
+    }
+
+    // Call this method to start the countdown
+    public void StartCountdown()
+    {
+        isStopwatchRunning = true;
+        timeRemaining = timeLimit;
+    }
+
+    // Call this method to stop the countdown
+    public void StopCountdown()
+    {
+        isStopwatchRunning = false;
+    }
+    
     
     // Method to change player appearance based on their role
     public void UpdatePlayerAppearance() {
@@ -84,7 +139,7 @@ public class PlayerController : NetworkBehaviour {
             lrc = FindObjectOfType<LocalXRRigCustom>();
 
         lrc = FindObjectOfType<LocalXRRigCustom>();
-        Vector3 v = new Vector3(Random.Range(3, 12), 27, Random.Range(2, 10));
+        Vector3 v = new Vector3(Random.Range(2, 12), 31, -7.6f);
         lrc.gameObject.transform.SetPositionAndRotation(v, Quaternion.identity);
     }
 
@@ -124,5 +179,22 @@ public class PlayerController : NetworkBehaviour {
         }
         
         NetworkManager.Instance.SessionRunner.Despawn(noToDestroy);
+    }
+    
+    
+    [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
+    public void RPC_RequestToShowMessage(string msg)
+    {
+        Debug.Log("RPC SHOW Msg");
+        ps.logCanvas.SetActive(true);
+        ps.logCanvas.GetComponentInChildren<TextMeshProUGUI>().text = msg;
+        StartCoroutine(DisableGO(ps.logCanvas, 3));
+    }
+
+
+    IEnumerator DisableGO(GameObject g, float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        g.SetActive(false);
     }
 }

@@ -21,8 +21,5 @@ public class GravityBody : MonoBehaviour
     private void FixedUpdate()
     {
         _planet.Attract(rigidbody);
-
-        // Vector3 move = new Vector3(0, -0.3f, 0);
-        // GetComponent<CharacterController>().Move(move);
     }
 }

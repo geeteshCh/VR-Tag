@@ -12,7 +12,7 @@ public class Teleporter : MonoBehaviour
     private bool aboutToTeleport = false;
     private Vector3 teleportPos = new Vector3();
     public Material tmat;
-    GameObject righController;
+    public GameObject righController;
     public GameObject pointer;
     void Start()
     {
@@ -25,11 +25,7 @@ public class Teleporter : MonoBehaviour
         if (teleportationCredits > 0)
         {
             RaycastHit hit;
-            if (righController == null)
-            {
-                righController = GameObject.Find("OculusTouchForQuest2RightModel");
-            }
-
+            
             if (OVRInput.Get(OVRInput.Button.One))
             {
                 if (Physics.Raycast(righController.transform.position, righController.transform.forward, out hit,
@@ -68,7 +64,6 @@ public class Teleporter : MonoBehaviour
 
             if (OVRInput.GetUp(OVRInput.Button.One) && aboutToTeleport)
             {
-                Debug.Log("Hi uppal balu here");
                 pointer.SetActive(false);
                 aboutToTeleport = false;
                 transform.position = teleportPos;
