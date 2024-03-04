@@ -19,7 +19,7 @@ public class Teleportation : MonoBehaviour
             teleporter.teleportationCredits += 1;
             if (prc == null)
                 FetchPRC();
-            prc.RPC_RequestToDespawn(GetComponent<NetworkObject>());
+            prc.RPC_RequestToDespawn(gameObject.name);
         }
     }
 }

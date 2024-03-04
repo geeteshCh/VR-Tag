@@ -23,7 +23,7 @@ public class TurboSpeed : MonoBehaviour
             firstPersonController.ActivateTurboSpeed(speedMultiplier, duration);
             if (prc == null)
                 FetchPRC();
-            prc.RPC_RequestToDespawn(GetComponent<NetworkObject>());
+            prc.RPC_RequestToDespawn(gameObject.name);
         }
     }
 }

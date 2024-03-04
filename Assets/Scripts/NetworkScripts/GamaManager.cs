@@ -7,8 +7,15 @@ using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour {
     
-    public NetworkObject canvasToDespawn;
+    public GameObject canvasToDespawn;
     private NetworkRigCustom nrc;
+
+
+    private void OnEnable()
+    {
+       
+    }
+
     private void Update()
     {
         if ((OVRInput.GetDown(OVRInput.Button.Two) || Input.GetKeyDown(KeyCode.X)))
@@ -28,9 +35,9 @@ public class GameManager : MonoBehaviour {
         print("chaser index " +chaserIndex);
         // Use an RPC to assign the chaser role based on the random index
         PlayerController pc = nrc.gameObject.GetComponent<PlayerController>();
+        pc.lifeCount += 1;
         pc.HandleCatch(nrc.playerNetworkObjects[chaserIndex].Id);
-        if(canvasToDespawn)
-            pc.RPC_RequestToDespawn(canvasToDespawn);
+        pc.RPC_RequestToDespawn(canvasToDespawn.name);
         print("chaser index " +chaserIndex);
     }
 

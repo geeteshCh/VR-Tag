@@ -14,12 +14,12 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     [SerializeField] private float minTheta, maxTheta, minPhi, maxPhi;
 
     public NetworkObject localPlayer;
-
+    
+    public GameObject diedScreen;
     void Start()
     {
         NetworkManager.Instance.SessionRunner.AddCallbacks(this);
         SpawnPlayer(NetworkManager.Instance.SessionRunner);
-        NetworkManager.Instance.RegisterNetworkObjects();
     }
 
     Vector3 GenerateRandomPositionInSector(float radius)

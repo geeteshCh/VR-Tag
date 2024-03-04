@@ -112,9 +112,8 @@ public class NetworkManager : MonoBehaviour, INetworkRunnerCallbacks
         }
     }
     
-    public void RegisterNetworkObjects()
+    public void RegisterNetworkObjects(NetworkObject[] networkObjectArray)
     {
-        NetworkObject[] networkObjectArray =  FindObjectsByType<NetworkObject>(FindObjectsSortMode.None);
         SceneRef sceneRef = SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex);
         SessionRunner.RegisterSceneObjects(sceneRef, networkObjectArray);
     }

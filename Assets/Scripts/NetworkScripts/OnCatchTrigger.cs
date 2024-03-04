@@ -15,17 +15,23 @@ public class OnCatchTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+        
+        
         Debug.Log("Trigger Enter Outside " +other.gameObject.layer + "  "+layerToTrigger  );
         if (other.gameObject.layer == 7)
         {   
+            if(playerRoleController == null)
+                playerRoleController = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
+            
+            if (!playerRoleController.isChaser)
+                return;
+            
             Debug.Log("Trigger Enter Inside");
             NetworkObject n = other.transform.root.GetComponent<NetworkObject>();
             if (n?.HasStateAuthority == false)
             {
                print(n.gameObject.GetComponent<NetworkRigCustom>().userName + " Got Caught ");
-               
-               if(playerRoleController == null)
-                   playerRoleController = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
                playerRoleController.HandleCatch(n.Id);
             }
         }
