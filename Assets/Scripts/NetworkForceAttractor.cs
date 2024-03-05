@@ -16,6 +16,8 @@ public class NetworkForceAttractor : NetworkBehaviour
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void RPC_RequestToApplyForce()
     {
+        if (Object.HasStateAuthority)
+            return;
         // This RPC is called by the chaser to change the role of the caught player
         Debug.Log("RPC To APPLY FORCE");
         ApplyForceFromPowerUp(pc.isChaser);
@@ -24,7 +26,8 @@ public class NetworkForceAttractor : NetworkBehaviour
     public void ApplyForceFromPowerUp(bool isAttracting)
     {
         GameObject g = FindObjectOfType<GravityBody>().gameObject;
-        StartCoroutine(ApplyForceOverTime(g, isAttracting));
+        if(g)
+            StartCoroutine(ApplyForceOverTime(g, isAttracting));
     }
 
     public IEnumerator ApplyForceOverTime(GameObject forceVictim, bool isAttracting)
@@ -40,15 +43,18 @@ public class NetworkForceAttractor : NetworkBehaviour
             {
                 // Attract towards the chaser
                 forceDirection = (transform.position - forceVictim.transform.position).normalized;
+                Debug.Log("Force Direction Attract :: "+forceDirection);
+
             }
             else
             {
                 // Repulse away from the runner
                 forceDirection = (forceVictim.transform.position-transform.position).normalized;
+                Debug.Log("Force Direction Repluse :: "+forceDirection);
             }
             forceVictim.GetComponent<Rigidbody>().AddForce(forceDirection * forceMagnitude);
             elapsed += Time.deltaTime;
-            Debug.Log("adding force");
+            Debug.Log("adding force " +Object.Id + "  "+forceVictim.gameObject.name + " " +pc.Object.Id);
             yield return null;
         }
         

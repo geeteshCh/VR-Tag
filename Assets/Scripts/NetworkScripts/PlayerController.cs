@@ -55,7 +55,7 @@ public class PlayerController : NetworkBehaviour {
         Debug.Log("Got Caught Called to Remove One Life");
         lifeCount -= 1;
         StartCountdown();
-        if (lifeCount < 3 && lifeCount >0)
+        if (lifeCount < 3 && lifeCount >=0)
         {
             ps.lifesIcons[lifeCount].SetActive(false);
         }
