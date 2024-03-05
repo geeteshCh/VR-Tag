@@ -14,6 +14,7 @@ public class Teleporter : MonoBehaviour
     public Material tmat;
     public GameObject righController;
     public GameObject pointer;
+    public PlayerSpawner ps;
     void Start()
     {
         
@@ -68,6 +69,7 @@ public class Teleporter : MonoBehaviour
                 aboutToTeleport = false;
                 transform.position = teleportPos;
                 teleportationCredits-=1;
+                ps.teleportationCreditText.text = teleportationCredits.ToString();
             }
         }
     }

@@ -44,6 +44,9 @@ public class PlayerController : NetworkBehaviour {
     
     public bool GotCaughtAndDied()
     {
+        if (!Object.HasStateAuthority)
+            return false;
+        
         if (Time.time - lastTime < 1)
             return false;
 
@@ -51,7 +54,11 @@ public class PlayerController : NetworkBehaviour {
         
         Debug.Log("Got Caught Called to Remove One Life");
         lifeCount -= 1;
-
+        StartCountdown();
+        if (lifeCount < 3 && lifeCount >0)
+        {
+            ps.lifesIcons[lifeCount].SetActive(false);
+        }
         if (lifeCount < 0)
         {
             string playerName = GetComponent<NetworkRigCustom>().FetchPlayerName();
@@ -74,6 +81,7 @@ public class PlayerController : NetworkBehaviour {
             // Subtract the fixed delta time from remaining time
             timeRemaining -= Time.fixedDeltaTime;
             Debug.Log($"Time Remaining: {timeRemaining} seconds");
+            ps.timerText.text = ((int)timeRemaining).ToString();
 
             if (timeRemaining <= 0)
             {
@@ -92,13 +100,17 @@ public class PlayerController : NetworkBehaviour {
     public void StartCountdown()
     {
         isStopwatchRunning = true;
+        ps.timerText.transform.parent.gameObject.SetActive(true);
+
         timeRemaining = timeLimit;
+        ps.timerText.text = timeRemaining.ToString();
     }
 
     // Call this method to stop the countdown
     public void StopCountdown()
     {
         isStopwatchRunning = false;
+        ps.timerText.transform.parent.gameObject.SetActive(false);
     }
     
     
@@ -111,6 +123,7 @@ public class PlayerController : NetworkBehaviour {
     [Rpc(RpcSources.StateAuthority, RpcTargets.All)]
     public void RPC_RequestRoleChange(NetworkId caughtPlayerId) {
         // This RPC is called by the chaser to change the role of the caught player
+        StopCountdown();
         NetworkObject.NetworkUnwrap(NetworkManager.Instance.SessionRunner, caughtPlayerId, ref newChaser);
         if (newChaser) {
             var caughtPlayerController = newChaser.GetComponent<PlayerController>();
@@ -147,7 +160,9 @@ public class PlayerController : NetworkBehaviour {
     public void HandleCatch(NetworkId caughtPlayerId) {
         
         Debug.Log("Handle Catch Called");
-        if (Object.HasStateAuthority) {
+        if (Object.HasStateAuthority)
+        {
+            StopCountdown();
             // The chaser initiates the RPC to change roles
             RPC_RequestRoleChange(caughtPlayerId);
         }
@@ -187,7 +202,7 @@ public class PlayerController : NetworkBehaviour {
     {
         Debug.Log("RPC SHOW Msg");
         ps.logCanvas.SetActive(true);
-        ps.logCanvas.GetComponentInChildren<TextMeshProUGUI>().text = msg;
+        ps.logCanvas.GetComponent<TextMeshProUGUI>().text = msg;
         StartCoroutine(DisableGO(ps.logCanvas, 3));
     }
 

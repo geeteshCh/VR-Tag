@@ -18,11 +18,17 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     
     public GameObject diedScreen;
     public GameObject logCanvas;
+    public TextMeshProUGUI timerText;
+    public TextMeshProUGUI teleportationCreditText;
+    public GameObject[] lifesIcons;
+    
+    
     void Start()
     {
         NetworkManager.Instance.SessionRunner.AddCallbacks(this);
         SpawnPlayer(NetworkManager.Instance.SessionRunner);
     }
+
 
     Vector3 GenerateRandomPositionInSector(float radius)
     {

@@ -598,8 +598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c400dde34e116bf4996083dc87269f7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forceMagnitude: 5
-  forceDuration: 700
+  forceMagnitude: 12
+  forceDuration: 5
   pc: {fileID: 5628731757827916582}
 --- !u!114 &5054029993166165056 stripped
 MonoBehaviour:

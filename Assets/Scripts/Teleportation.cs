@@ -5,10 +5,12 @@ using UnityEngine;
 public class Teleportation : MonoBehaviour
 {
     private PlayerController prc; // How long the turbo speed lasts
-
+    private PlayerSpawner ps;
+    public AudioSource asc;
     private void FetchPRC()
     {
-        prc = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
+        ps = FindObjectOfType<PlayerSpawner>();
+        prc = ps.localPlayer.GetComponent<PlayerController>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -20,6 +22,9 @@ public class Teleportation : MonoBehaviour
             if (prc == null)
                 FetchPRC();
             prc.RPC_RequestToDespawn(gameObject.name);
+            asc.Play();
+
+            ps.teleportationCreditText.text = teleporter.teleportationCredits.ToString();
         }
     }
 }

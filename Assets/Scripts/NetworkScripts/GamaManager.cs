@@ -9,8 +9,9 @@ public class GameManager : MonoBehaviour {
     
     public GameObject canvasToDespawn;
     private NetworkRigCustom nrc;
-
-
+    public bool isCalledInStart = false;
+    
+    public GameObject uiCanvas;
     private void OnEnable()
     {
        
@@ -18,9 +19,14 @@ public class GameManager : MonoBehaviour {
 
     private void Update()
     {
-        if ((OVRInput.GetDown(OVRInput.Button.Three) || Input.GetKeyDown(KeyCode.X)))
+        if ((OVRInput.GetDown(OVRInput.Button.Three) || Input.GetKeyDown(KeyCode.X)) && !isCalledInStart)
         {
+            isCalledInStart = true;
             AssignChaserRandomly();
+        }
+        if(OVRInput.GetDown(OVRInput.Button.Two))
+        {
+            uiCanvas.SetActive(!uiCanvas.activeInHierarchy);
         }
     }
 

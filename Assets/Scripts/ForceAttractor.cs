@@ -6,7 +6,7 @@ using UnityEngine;
 public class ForceAttractor : MonoBehaviour
 {
     private PlayerController prc;// How long the turbo speed lasts
-
+    public AudioSource asc;
     private void FetchPRC()
     {
         prc = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
@@ -20,6 +20,7 @@ public class ForceAttractor : MonoBehaviour
                 FetchPRC();
             prc.gameObject.GetComponent<NetworkForceAttractor>().RPC_RequestToApplyForce();
             prc.RPC_RequestToDespawn(gameObject.name);
+            asc.Play();
         }
     }
     

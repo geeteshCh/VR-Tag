@@ -8,17 +8,14 @@ public class OnCatchTrigger : MonoBehaviour
 {
     public PlayerController playerRoleController;
     public LayerMask layerToTrigger;
-
+    public AudioSource asc;
     private void OnEnable()
     {
     }
 
     private void OnTriggerEnter(Collider other)
     {
-
-        
-        
-        Debug.Log("Trigger Enter Outside " +other.gameObject.layer + "  "+layerToTrigger  );
+        Debug.Log("Trigger Enter Outside " +other.gameObject.layer + "  "+layerToTrigger );
         if (other.gameObject.layer == 7)
         {   
             if(playerRoleController == null)
@@ -27,12 +24,14 @@ public class OnCatchTrigger : MonoBehaviour
             if (!playerRoleController.isChaser)
                 return;
             
+            
             Debug.Log("Trigger Enter Inside");
             NetworkObject n = other.transform.root.GetComponent<NetworkObject>();
             if (n?.HasStateAuthority == false)
             {
                print(n.gameObject.GetComponent<NetworkRigCustom>().userName + " Got Caught ");
                playerRoleController.HandleCatch(n.Id);
+               asc.Play();
             }
         }
     }

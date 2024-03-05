@@ -7,7 +7,7 @@ public class TurboSpeed : MonoBehaviour
     public float speedMultiplier = 2.0f; // How much to multiply the speed by
     public float duration = 5.0f;
     private PlayerController prc;// How long the turbo speed lasts
-    
+    public AudioSource asc;
     private void FetchPRC()
     {
         prc = FindObjectOfType<PlayerSpawner>().localPlayer.GetComponent<PlayerController>();
@@ -22,6 +22,7 @@ public class TurboSpeed : MonoBehaviour
             if (prc == null)
                 FetchPRC();
             prc.RPC_RequestToDespawn(gameObject.name);
+            asc.Play();
         }
     }
 }
