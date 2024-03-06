@@ -21,7 +21,7 @@ public class PlayerSpawner : MonoBehaviour, INetworkRunnerCallbacks
     public TextMeshProUGUI timerText;
     public TextMeshProUGUI teleportationCreditText;
     public GameObject[] lifesIcons;
-    
+    public AudioSource ascOutSound;
     
     void Start()
     {

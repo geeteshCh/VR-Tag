@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
     public GameObject canvasToDespawn;
     private NetworkRigCustom nrc;
     public bool isCalledInStart = false;
-    
+
     public GameObject uiCanvas;
     private void OnEnable()
     {

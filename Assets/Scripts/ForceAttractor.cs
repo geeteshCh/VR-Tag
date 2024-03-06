@@ -20,7 +20,7 @@ public class ForceAttractor : MonoBehaviour
                 FetchPRC();
             prc.gameObject.GetComponent<NetworkForceAttractor>().RPC_RequestToApplyForce();
             prc.RPC_RequestToDespawn(gameObject.name);
-            asc.Play();
+            
         }
     }
     

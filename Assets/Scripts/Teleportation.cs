@@ -22,8 +22,6 @@ public class Teleportation : MonoBehaviour
             if (prc == null)
                 FetchPRC();
             prc.RPC_RequestToDespawn(gameObject.name);
-            asc.Play();
-
             ps.teleportationCreditText.text = teleporter.teleportationCredits.ToString();
         }
     }

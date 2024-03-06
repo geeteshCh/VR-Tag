@@ -8,7 +8,6 @@ public class OnCatchTrigger : MonoBehaviour
 {
     public PlayerController playerRoleController;
     public LayerMask layerToTrigger;
-    public AudioSource asc;
     private void OnEnable()
     {
     }
@@ -31,7 +30,6 @@ public class OnCatchTrigger : MonoBehaviour
             {
                print(n.gameObject.GetComponent<NetworkRigCustom>().userName + " Got Caught ");
                playerRoleController.HandleCatch(n.Id);
-               asc.Play();
             }
         }
     }

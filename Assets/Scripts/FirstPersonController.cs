@@ -24,16 +24,21 @@ public class FirstPersonController : MonoBehaviour
     {
         transform.Rotate(Vector3.up * OVRInput.Get(OVRInput.Axis2D.SecondaryThumbstick).x);
         input = OVRInput.Get(OVRInput.Axis2D.PrimaryThumbstick);
-        Vector3 moveDir = new Vector3(input.x, 0, input.y).normalized;
-        // Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
+       
+        Vector3 forwardDirection = OVRRigTransform.forward;
+        Vector3 rightDirection = OVRRigTransform.right;
+        
+        Vector3 moveDir = (forwardDirection * input.y + rightDirection * input.x).normalized;
 
+        
         Vector3 targetMoveAmount = moveDir * walkSpeed;
+        targetMoveAmount.y /= walkSpeed;
         moveAmount = Vector3.SmoothDamp(moveAmount, targetMoveAmount, ref smoothMovevelocity, .15f);
     }
 
     private void FixedUpdate()
     {
-        Vector3 localMove = transform.TransformDirection(moveAmount) * Time.fixedDeltaTime;
+        Vector3 localMove =  moveAmount * Time.fixedDeltaTime;;
         rigidbody.MovePosition(rigidbody.position + localMove);
     }
     
@@ -45,7 +50,7 @@ public class FirstPersonController : MonoBehaviour
 
     private IEnumerator TurboSpeedRoutine(float multiplier, float duration)
     {
-        walkSpeed = walkSpeed * multiplier; // Increase the speed
+        walkSpeed = walkSpeed * multiplier/1.3f; // Increase the speed
         yield return new WaitForSeconds(duration); // Wait for the duration of the turbo speed
         walkSpeed = walkSpeed/multiplier; // Reset the speed back to normal
     }

@@ -14,11 +14,9 @@ public class GravityBody : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.useGravity = false;
         rigidbody.constraints = RigidbodyConstraints.FreezeRotation;
-        
-
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         _planet.Attract(rigidbody);
     }

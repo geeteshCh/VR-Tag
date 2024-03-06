@@ -44,6 +44,9 @@ public class PlayerController : NetworkBehaviour {
     
     public bool GotCaughtAndDied()
     {
+       
+        StartCountdown();
+        
         if (!Object.HasStateAuthority)
             return false;
         
@@ -54,8 +57,7 @@ public class PlayerController : NetworkBehaviour {
         
         Debug.Log("Got Caught Called to Remove One Life");
         lifeCount -= 1;
-        StartCountdown();
-        if (lifeCount < 3 && lifeCount >0)
+        if (lifeCount < 3 && lifeCount >=0)
         {
             ps.lifesIcons[lifeCount].SetActive(false);
         }
@@ -125,6 +127,9 @@ public class PlayerController : NetworkBehaviour {
         // This RPC is called by the chaser to change the role of the caught player
         StopCountdown();
         NetworkObject.NetworkUnwrap(NetworkManager.Instance.SessionRunner, caughtPlayerId, ref newChaser);
+        if (!ps)
+            ps = FindObjectOfType<PlayerSpawner>();
+        ps.ascOutSound.Play();
         if (newChaser) {
             var caughtPlayerController = newChaser.GetComponent<PlayerController>();
             if (caughtPlayerController != null) {
@@ -201,11 +206,12 @@ public class PlayerController : NetworkBehaviour {
     public void RPC_RequestToShowMessage(string msg)
     {
         Debug.Log("RPC SHOW Msg");
+        if (!ps)
+            ps = FindObjectOfType<PlayerSpawner>();
         ps.logCanvas.SetActive(true);
         ps.logCanvas.GetComponent<TextMeshProUGUI>().text = msg;
-        StartCoroutine(DisableGO(ps.logCanvas, 3));
+        StartCoroutine(DisableGO(ps.logCanvas, 20));
     }
-
 
     IEnumerator DisableGO(GameObject g, float duration)
     {
