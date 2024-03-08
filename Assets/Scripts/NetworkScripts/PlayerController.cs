@@ -180,7 +180,10 @@ public class PlayerController : NetworkBehaviour {
         
         // This RPC is called by the chaser to change the role of the caught player
         Debug.Log("RPC Called for Local GO " +name);
-        GameObject.Find(name)?.SetActive(false);
+        GameObject go = GameObject.Find(name);
+        go?.SetActive(false);
+        if (go.tag == "IntroCanvas")
+            FindObjectOfType<FirstPersonController>().enabled = true;
 
     }
     

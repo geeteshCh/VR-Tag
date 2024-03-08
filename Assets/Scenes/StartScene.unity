@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 8314ffe855e0e45b0a2fdbbdfe2010ea, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 992219212ce91b44db52f83ff0079c08, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10139937, g: 0.2892555, b: 0.5375916, a: 1}
+  m_IndirectSpecularColor: {r: 0.18939051, g: 0.5378386, b: 0.84328425, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1457,11 +1457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1633663389264744942, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.64
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: 1633663389264744942, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7
+      value: 2.853
       objectReference: {fileID: 0}
     - target: {fileID: 1633663389264744942, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1495,6 +1495,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1633663389265206834, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633663389265206834, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633663389265206834, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1633663389265206834, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1510,7 +1526,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1633663389264700476, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2140538119}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1633663389264252360, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1124498965}
   m_SourcePrefab: {fileID: 100100000, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
 --- !u!4 &785809949 stripped
 Transform:
@@ -2435,6 +2454,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111439707}
   m_CullTransparentMesh: 1
+--- !u!1 &1124498961 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1633663389264252360, guid: e84c59e6d857e01498674f72792a5b69, type: 3}
+  m_PrefabInstance: {fileID: 785809948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1124498965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124498961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    quality: 3
+    frameInfluence: 0.1
+    jitterScale: 1
+    mipBias: 0
+    varianceClampScale: 0.9
+    contrastAdaptiveSharpening: 0
 --- !u!1 &1177040370
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,11 @@ public class GravityBody : MonoBehaviour
 
     private void Update()
     {
+       // _planet.Attract(rigidbody);
+    }
+    
+    private void FixedUpdate()
+    {
         _planet.Attract(rigidbody);
     }
 }

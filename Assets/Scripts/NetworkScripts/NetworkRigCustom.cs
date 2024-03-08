@@ -30,28 +30,18 @@ public class NetworkRigCustom : NetworkBehaviour
     [SerializeField]
     private NetworkTransform _rightHandTransform;
     
-    [SerializeField]
-    private NetworkTransform _rightOculusHandTransform;
-    [SerializeField]
-    private NetworkTransform _leftOculusHandTransform;
-    
+  
     #endregion
 
     LocalXRRigCustom _localXRRig;
     
         
-    [SerializeField] private NetworkTransform[] lfingers;
-    [SerializeField] private NetworkTransform[] rfingers;
-
+   
     [Networked, OnChangedRender(nameof(OnUserNameChanged)),Capacity(20)]
     public NetworkString<_32> userName { get; set; }
     public List<NetworkObject> playerNetworkObjects { get; } = new();
 
-    void OnEnable()
-    {
-        rfingers = _rightOculusHandTransform.gameObject.GetComponentsInChildren<NetworkTransform>();
-        lfingers = _leftOculusHandTransform.gameObject.GetComponentsInChildren<NetworkTransform>();
-    }
+    
 
     void OnUserNameChanged()
     {
@@ -125,16 +115,7 @@ public class NetworkRigCustom : NetworkBehaviour
             _rightHandTransform.transform.SetPositionAndRotation(inputData.RightHandPosition, inputData.RightHandRotation);
         }
         
-        if (IsLocalNetworkRig)
-        {
-            int i = 0;
-            foreach (var nt in rfingers)
-            {
-                nt.transform.SetPositionAndRotation(_localXRRig.rfingers[i].position, _localXRRig.rfingers[i].rotation);
-                lfingers[i].transform.SetPositionAndRotation(_localXRRig.lfingers[i].position, _localXRRig.lfingers[i].rotation);
-                i++;
-            }
-        }
+       
     }
     public override void Render()
     {
